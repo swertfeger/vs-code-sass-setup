@@ -2,16 +2,16 @@
 Instructions and test for setting up Sass transpiling on Visual Studio Code
 
 
-#Setting up Sass (SCSS) Transpiling in Visual Studio Code
+# Setting up Sass (SCSS) Transpiling in Visual Studio Code
 
 This is a simplified version of the instructions found in the [VS Code - CSS Docs](https://code.visualstudio.com/docs/languages/css)
 
-##Transpiling Sass and Less into CSS
+# #Transpiling Sass and Less into CSS
 VS Code can integrate with a Sass transpiler through our integrated [task runner](https://code.visualstudio.com/docs/editor/tasks). We can use this to transpile `.scss` files into `.css` files.
 
-###Step 1: Install a Sass transpiler
+### Step 1: Install a Sass transpiler
 For this walkthrough, let's use the [node-sass](https://www.npmjs.com/package/node-sass) Node.js module.
->Note: If you don't have Node.js and the npm package manager already installed, you'll need to do so for this walkthrough. [Install Node.js](https://nodejs.org/en/download/) for your platform. The Node Package Manager (npm) is included in the Node.js distribution. You'll need to open a new terminal (command prompt) for `npm` to be on your PATH.
+> Note: If you don't have Node.js and the npm package manager already installed, you'll need to do so for this walkthrough. [Install Node.js](https://nodejs.org/en/download/) for your platform. The Node Package Manager (npm) is included in the Node.js distribution. You'll need to open a new terminal (command prompt) for `npm` to be on your PATH.
 From within VS Code, select the terminal menu and select "New Terminal".
 
 ![Open New Terminal!](./images/docs/open-terminal.png "Open Terminal Menu")
@@ -27,7 +27,7 @@ npm install -g node-sass
 This installs the node-sass package on your computer and it will be accessible for any project going forward.
 
 
-###Step 2: Create a simple Sass file
+### Step 2: Create a simple Sass file
 
 Open VS Code on an empty folder and create a styles.scss file. Place the following code in that file:
 
@@ -59,7 +59,7 @@ body {
 }
 ```
 
-###Step 3: Create tasks.json
+### Step 3: Create tasks.json
 The next step is to set up the task configuration. To do this, run **Terminal > Configure Tasks**
 
 ![Terminal Configure Tasks!](./images/docs/configure-tasks.png "Open Configure Tasks")
@@ -91,7 +91,7 @@ This will create a sample tasks.json file in the workspace .vscode folder. The i
 }
 ```
 
-###Step 4: Run the Build Task
+### Step 4: Run the Build Task
 As this is the only command in the file, you can execute it by pressing `⇧⌘B` (Run Build Task).
 
 If the command asks which build task to run, select **Sass Compile**.
