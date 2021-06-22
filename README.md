@@ -1,22 +1,20 @@
-# vs-code-sass-setup
-Instructions and test for setting up Sass transpiling on Visual Studio Code
-
-
 # Setting up Sass (SCSS) Transpiling in Visual Studio Code
 
 This is a simplified version of the instructions found in the [VS Code - CSS Docs](https://code.visualstudio.com/docs/languages/css)
 
-# #Transpiling Sass and Less into CSS
+## Transpiling Sass and Less into CSS
 VS Code can integrate with a Sass transpiler through our integrated [task runner](https://code.visualstudio.com/docs/editor/tasks). We can use this to transpile `.scss` files into `.css` files.
 
 ### Step 1: Install a Sass transpiler
 For this walkthrough, let's use the [node-sass](https://www.npmjs.com/package/node-sass) Node.js module.
+
 > Note: If you don't have Node.js and the npm package manager already installed, you'll need to do so for this walkthrough. [Install Node.js](https://nodejs.org/en/download/) for your platform. The Node Package Manager (npm) is included in the Node.js distribution. You'll need to open a new terminal (command prompt) for `npm` to be on your PATH.
 From within VS Code, select the terminal menu and select "New Terminal".
 
 ![Open New Terminal!](./images/docs/open-terminal.png "Open Terminal Menu")
  
 This opens the Command Line window at the bottom of the screen.
+
 ![Terminal Window!](./images/docs/new-terminal.png "Terminal Window")
 
 In the terminal window, paste the following then hit return.
@@ -28,6 +26,8 @@ This installs the node-sass package on your computer and it will be accessible f
 
 
 ### Step 2: Create a simple Sass file
+
+> For this repo the `styles.scss` file has already been created
 
 Open VS Code on an empty folder and create a styles.scss file. Place the following code in that file:
 
