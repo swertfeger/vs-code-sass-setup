@@ -100,9 +100,18 @@ If the command asks which build task to run, select **Sass Compile**.
 
 The sample Sass file should not have any compile problems, so by running the task all that happens is a corresponding `styles.css` file is created.
 
+## Testing
+
+Once you run the build task open the index.html file in a browser. If your build was successful you will see a styled page.
+
+### Unstyled
+
+![Unstyled!](./images/docs/not-successful.png "Unstyled index.html")
 
 
+### Success!!
 
+![Styled!](./images/docs/successful.png "Styled index.html")
 
 
 
