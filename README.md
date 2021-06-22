@@ -31,7 +31,7 @@ This installs the node-sass package on your computer and it will be accessible f
 
 Open VS Code on an empty folder and create a styles.scss file. Place the following code in that file:
 
-```sass
+```scss
 body {
   padding: 0;
   margin: 0;
