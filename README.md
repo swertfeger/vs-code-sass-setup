@@ -24,6 +24,18 @@ npm install -g node-sass
 
 This installs the node-sass package on your computer and it will be accessible for any project going forward.
 
+### Troubleshooting Errors - MacOS
+If you have a permissions error installing `node-sass` you will need to update your permissions for the `node_modules` folder.
+
+In the terminal enter the following, one command at a time, replacing "USERNAME" with your username.
+
+```
+cd /usr/local/lib;
+sudo chown -R USERNAME node_modules
+npm install -g node-sass
+```
+
+
 
 ### Step 2: Create a simple Sass file
 
@@ -99,6 +111,34 @@ If the command asks which build task to run, select **Sass Compile**.
 ![Run Sass Compile!](./images/docs/sass-compile-build.png "Run Sass Compile")
 
 The sample Sass file should not have any compile problems, so by running the task all that happens is a corresponding `styles.css` file is created.
+
+
+### Troubleshooting Errors - Windows 10
+Windows Users, if you have an error running the task
+
+```
+node-sass : File C:\Users\[username]\AppData\Roaming\npm\node-sass.ps1cannot be loaded because running scripts is 
+disabled on this system. For more information, see about_Execution_Policies at 
+https:/go.microsoft.com/fwlink/?LinkID=135170.
+```
+You will need to update your script execution permissions.
+
+Open Powershell and paste this command:
+
+```
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+```
+
+When prompted, enter A, for Yes to All, and hit return
+
+```The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose
+you to the security risks described in the about_Execution_Policies help topic at
+https:/go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): 
+```
+
+Return to Visual Studio Code and run the command again.
+
 
 ## Testing
 
